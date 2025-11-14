@@ -126,7 +126,7 @@ export const Navbar = () => {
                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
                   <Link
                     className="text-foreground cursor-pointer inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium shadow-sm shadow-black/15 border border-primary duration-200 hover:bg-primary hover:text-foreground h-8 rounded-md px-3 text-xs"
-                    to="/seconnecter"
+                    to="/auth/connexion"
                   >
                     <span>Se connecter</span>
                   </Link>

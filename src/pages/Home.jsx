@@ -6,8 +6,6 @@ import { Parteners } from "../components/Parteners";
 import { VisibiltyLogo } from "../components/VisibilityLogo";
 
 export const Home = () => {
-
-
   return (
     <>
       <HeroCarousel />

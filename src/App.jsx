@@ -19,9 +19,9 @@ function App() {
         <Route path="trajet" element={<Trajet />} />
         <Route path="partenaire" element={<Partenaire />} />
       </Route>
-      <Route path="" element={<AuthLayout />}>
-        <Route path="seconnecter" element={<Login />} />
-        <Route path="sinscrire" element={<Register />} />
+      <Route path="auth" element={<AuthLayout />}>
+        <Route path="connexion" element={<Login />} />
+        <Route path="inscription" element={<Register />} />
       </Route>
     </Routes>
   )
