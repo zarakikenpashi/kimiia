@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router"
 import { AuthLayout } from "./components/AuthLayout"
 import { Layout } from "./components/Layout"
-import { Home } from "./pages/home"
-import { Login } from "./pages/login"
+
+import { Home } from "./pages/Home"
+import { Login } from "./pages/Login"
 import { Register } from "./pages/Register"
 import { ServiceClient } from "./pages/ServiceClient"
 import { Voyager } from "./pages/Voyager"
