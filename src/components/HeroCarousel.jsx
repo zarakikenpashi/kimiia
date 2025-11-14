@@ -9,16 +9,16 @@ export const HeroCarousel = () => {
     {
       image:
         "https://rail.ninja/_next/image?url=https%3A%2F%2Fback.rail.ninja%2Fsites%2Fdefault%2Ffiles%2F2025-08%2Frn_main_page_bg.webp&w=640&q=1",
-      title: "Modern Solutions for Customer Engagement",
+      title: "Réservez vos voyages en un instant",
       description:
-        "Highly customizable components for building modern websites and applications that look and feel the way you mean it.",
+        "Cherchez, sélectionnez et payez vos billets de voyage facilement et rapidement avec Kiimia.",
     },
     {
       image:
         "https://rail.ninja/_next/image?url=https%3A%2F%2Fback.rail.ninja%2Fsites%2Fdefault%2Ffiles%2F2025-04%2Ftrain-travel-min.webp&w=1080&q=70",
-      title: "Empower Your Business with Modern Design",
+      title: "Voyagez l'esprit tranquille",
       description:
-        "Create fast, responsive, and elegant interfaces that delight your users.",
+        "Kiimia vous offre des réservations sécurisées et fiables, bientôt disponible pour tous vos trajets panafricains.",
     },
   ];
   return (
@@ -72,11 +72,11 @@ export const HeroCarousel = () => {
 
                   <div className="flex flex-col items-center justify-center gap-3 md:flex-row">
                     <a className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-5 py-2 text-base font-medium text-primary-foreground shadow-md transition hover:bg-primary/90">
-                      Voyagez maintenant
+                      Commencez votre voyage
                     </a>
 
                     <a className="cursor-pointer inline-flex items-center justify-center gap-2 rounded-xl border border-primary px-5 py-2 text-sm font-medium text-white hover:bg-accent hover:text-accent-foreground">
-                      Télécharger l'appli
+                      Découvrir nos trajets
                     </a>
                   </div>
                 </div>
@@ -87,7 +87,7 @@ export const HeroCarousel = () => {
 
         {/* Flèche droite */}
         <div className="swiper-button-next-custom absolute top-1/2 right-5 z-20 -translate-y-1/2 cursor-pointer">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500 text-white transition hover:bg-orange-600">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white transition hover:bg-orange-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -102,7 +102,7 @@ export const HeroCarousel = () => {
 
         {/* Flèche gauche */}
         <div className="swiper-button-prev-custom absolute top-1/2 left-5 z-20 -translate-y-1/2 cursor-pointer">
-          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-orange-500 text-white transition hover:bg-orange-600">
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white transition hover:bg-orange-600">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -118,11 +118,11 @@ export const HeroCarousel = () => {
         {/* Pagination personnalisée via style */}
         <style jsx>{`
           .swiper-pagination-bullet {
-            background-color: white; /* bullet inactive */
+            background-color: white; 
             opacity: 1;
           }
           .swiper-pagination-bullet-active {
-            background-color: #f97316; /* orange Tailwind bg-orange-500 */
+            background-color: rgb(255,78,0); 
           }
         `}</style>
       </Swiper>

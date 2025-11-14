@@ -5,17 +5,17 @@ import "swiper/css/navigation";
 
 const destinations = [
   {
-    title: "Bouake",
+    title: "Abidjan",
     tag: "Short haul",
     img: "https://ak-d.tripcdn.com/images/0HJ6j12000hbwx80h1CA6_D_600_400_R5.jpg?proc=source/trip&proc=namelogo/d_5",
   },
   {
-    title: "Cairo",
+    title: "Bouaké",
     tag: "Medium haul",
     img: "https://ak-d.tripcdn.com/images/01050120008axf3n63276_D_600_400_R5.jpg?proc=source/trip&proc=namelogo/d_5",
   },
   {
-    title: "Tokyo",
+    title: "San Pedro",
     tag: "Long haul",
     img: "https://ak-d.tripcdn.com/images/100r1c000001d5cue3196_D_600_400_R5.jpg?proc=source/trip&proc=namelogo/d_5",
   },
@@ -25,7 +25,7 @@ const destinations = [
     img: "https://youimg1.tripcdn.com/target/0103o12000agse4tu95C3_D_600_400_R5.jpg?proc=source/trip&proc=namelogo/d_5",
   },
   {
-    title: "Marrakech",
+    title: "Yamoussoukro",
     tag: "Medium haul",
     img: "https://ak-d.tripcdn.com/images/10051f000001gsqk04FC4_D_600_400_R5.jpg?proc=source/trip&proc=namelogo/d_5",
   },
@@ -35,17 +35,17 @@ const destinations = [
     img: "https://ak-d.tripcdn.com/images/0101k12000admkld4652D_D_600_400_R5.jpg?proc=source/trip&proc=namelogo/d_5",
   },
   {
-    title: "Libreville",
+    title: "Bondoukou",
     tag: "Short haul",
     img: "https://ak-d.tripcdn.com/images/0ww701200090jc0ad7776_D_600_400_R5.jpg?proc=source/trip&proc=namelogo/d_5",
   },
   {
-    title: "Milan",
+    title: "Divo",
     tag: "Medium haul",
     img: "https://ak-d.tripcdn.com/images/0105t12000aq7c06oD470_D_600_400_R5.jpg?proc=source/trip&proc=namelogo/d_5",
   },
   {
-    title: "Bangkok",
+    title: "Man",
     tag: "Long haul",
     img: "https://ak-d.tripcdn.com/images/0104c120005ww2m2yF324_D_600_400_R5.jpg?proc=source/trip&proc=namelogo/d_5",
   },

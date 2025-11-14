@@ -4,7 +4,7 @@ export const Benefits = () => {
             <div className="grid lg:grid-cols-2 items-center gap-y-6 gap-x-8 grid-cols-1 lg:gap-y-4">
                 <div className="text-[rgb(89,89,89)]">
                     <p>
-                        Kimiia est un service de réservation de billets de train en ligne. Ce n'est pas un transporteur ferroviaire, il ne possède ni n'exploite de trains et ne représente pas le site officiel d'aucune compagnie ferroviaire. C'est une entreprise commerciale qui facilite la réservation de billets de train en ligne.
+                        kiimia est une entreprise commerciale qui facilite la réservation de billets pour vos voyages.
                     </p>
                 </div>
                 <div>
@@ -12,7 +12,7 @@ export const Benefits = () => {
                         <li className="border border-gray-200 flex-1 rounded-lg">
                             <a href="" className="inline-flex flex-col gap-2 px-6 py-3.5 w-full">
                                 <span className="flex justify-between">
-                                    <span className="text-xs font-medium leading-5 tracking-normal normal-case no-underline text-[#FFAF01]">Utilisez notre application gratuite</span>
+                                    <span className="text-xs font-medium leading-5 tracking-normal normal-case no-underline text-foreground">Utilisez notre application gratuite</span>
                                     <svg 
                                         xmlns="http://www.w3.org/2000/svg" 
                                         viewBox="0 0 24 24" 
@@ -27,7 +27,7 @@ export const Benefits = () => {
                         <li className="border border-gray-200 flex-1 rounded-lg bg-[rgba(255,175,1,0.1)]">
                             <a href="" className="inline-flex flex-col gap-2 px-6 py-3.5 w-full">
                                 <span className="flex justify-between">
-                                    <span className="text-xs font-medium leading-5 tracking-normal normal-case no-underline text-[#FFAF01]">Avis sur Kimiia</span>
+                                    <span className="text-xs font-medium leading-5 tracking-normal normal-case no-underline text-foreground">Avis sur kiimia</span>
                                     <svg 
                                         xmlns="http://www.w3.org/2000/svg" 
                                         viewBox="0 0 24 24" 
@@ -42,7 +42,7 @@ export const Benefits = () => {
                         <li className="border border-gray-200 flex-1 rounded-lg bg-[rgb(238,238,238)]">
                             <a href="" className="inline-flex flex-col gap-2 px-6 py-3.5 w-full">
                                 <span className="flex justify-between">
-                                    <span className="text-xs font-medium leading-5 tracking-normal normal-case no-underline text-[#FFAF01]">Disponible 24/7</span>
+                                    <span className="text-xs font-medium leading-5 tracking-normal normal-case no-underline text-foreground">Disponible 24/7</span>
                                     <svg 
                                         xmlns="http://www.w3.org/2000/svg" 
                                         viewBox="0 0 24 24" 
