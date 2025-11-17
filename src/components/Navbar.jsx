@@ -28,7 +28,7 @@ export const Navbar = () => {
 
   return (
     <nav className="fixed z-20 w-full px-2">
-      <div className="mx-auto mt-2 px-6 transition-all duration-300 bg-background/50 max-w-6xl rounded-2xl bg-white lg:px-5">
+      <div className="mx-auto mt-2 px-6 transition-all duration-300 max-w-6xl rounded-2xl bg-white lg:px-5">
         <div className="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
             <div className="flex w-full justify-between lg:w-auto">
                 <a className="flex items-center space-x-2">
