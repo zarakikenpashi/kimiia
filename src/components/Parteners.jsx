@@ -35,7 +35,7 @@ const companies = [
 export const Parteners = () => {
   return (
     <section className="py-12 overflow-hidden">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         {/* Titre et texte */}
         <div className="flex flex-col items-center md:flex-row md:items-center md:justify-between gap-6">
 

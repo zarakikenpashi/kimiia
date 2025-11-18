@@ -53,11 +53,11 @@ const destinations = [
 export const DestinationTab = () => {
 
   return (
-    <section className="mx-auto mt-2 px-6 max-w-6xl rounded-2xl lg:px-5 py-12">
+    <section className="mx-auto mt-2 px-6 max-w-7xl rounded-2xl lg:px-5 py-12">
         <div className="max-w-[400px] mb-8">
             <h2 className="text-[16px] leading-6 md:text-2xl font-medium lg:leading-8">Trouvez l'inspiration pour votre prochain voyage</h2>
         </div>
-        <div className="relative max-w-[1160px] mx-auto">
+        <div className="relative max-w-7xl mx-auto">
 
         <div className="swiper-button-prev absolute -left-5 top-1/2 -translate-y-1/2  bg-white rounded-[20px] shadow-md text-[#0f294d] cursor-pointer text-[20px] h-10 w-10 z-10 hover:bg-[#2c61fe] hover:text-white transition-all duration-300 flex items-center justify-center">‹</div>
         <div className="swiper-button-next absolute -right-5 top-1/2 -translate-y-1/2 bg-white rounded-[20px] shadow-md text-[#0f294d] cursor-pointer text-[20px] h-10 w-10 z-10 hover:bg-[#2c61fe] hover:text-white transition-all duration-300 flex items-center justify-center">›</div>

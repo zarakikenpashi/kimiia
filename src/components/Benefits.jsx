@@ -1,6 +1,6 @@
 export const Benefits = () => {
     return(
-        <section className="mx-auto mt-2 px-6 max-w-6xl rounded-2xl lg:px-5 py-12">
+        <section className="mx-auto mt-2 px-6 max-w-7xl rounded-2xl lg:px-5 py-12">
             <div className="grid lg:grid-cols-2 items-center gap-y-6 gap-x-8 grid-cols-1 lg:gap-y-4">
                 <div className="text-[rgb(89,89,89)]">
                     <p>

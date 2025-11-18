@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@plugin "daisyui";
+
 .swiper-button-next svg, 
 .swiper-button-prev svg{
   display: none !important;
@@ -39,6 +41,7 @@ animation: scroll 20s linear infinite;
   .text-accent-foreground { color: rgb(var(--accent-foreground)); }
 
   .border-primary { border-color: rgb(var(--primary)); }
+  .border-muted { border-color: rgb(var(--muted)); }
   
   /* Couleurs de texte */
   .text-muted-foreground { color: rgb(var(--muted)); }
@@ -47,3 +50,21 @@ animation: scroll 20s linear infinite;
   /* Bordure du lien (le soulignement) */  
   .hover\:border-b-primary:hover { border-bottom-color: rgb(var(--primary)); }
 }
+
+.tabs-lift{
+  @apply bg-white rounded-lg  shadow-sm;
+}
+/* style pour le tab actif  bg-[#595959]*/
+.tab{
+  @apply rounded-full
+}
+.tab:hover{
+  @apply text-[rgb(255,78,0)]
+}
+.tab:checked{
+  @apply text-white bg-[rgb(255,78,0)] rounded-full;
+}
+/* .tab:checked + .tab-content,
+.tab.tab-active {
+  @apply bg-blue-500 text-white;
+} */

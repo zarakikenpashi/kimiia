@@ -1,6 +1,6 @@
 export const ApplicationLinks = () => {
     return(
-        <section className="mx-auto mt-2 px-6 max-w-6xl rounded-2xl lg:px-5">
+        <section className="mx-auto mt-2 px-6 max-w-7xl rounded-2xl lg:px-5">
             <div className="relative flex items-center justify-between w-full p-12   bg-black rounded-lg overflow-hidden mb-2">
                 <img
                     alt="background"

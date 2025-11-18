@@ -2,7 +2,7 @@ export const Header = () => {
     return(
         <div 
             className="
-                min-h-[560px] pb-6 w-full relative
+                min-h-[360px] pb-6 w-full relative
                 before:content-['']
                 before:absolute
                 before:inset-0
@@ -18,6 +18,7 @@ export const Header = () => {
                 after:bg-linear-to-t
                 after:from-black
                 after:to-transparent
+                mb-14
             "
         >
 
@@ -29,82 +30,10 @@ export const Header = () => {
                     loading="lazy"
                 />
             </div>
-            <div className="absolute inset-0 z-10 text-white mx-auto max-w-7xl px-6">
+            <div className="absolute inset-0 z-10 text-white mx-auto max-w-7xl px-6 top-1/2">
                 <div className="flex justify-center flex-col h-full gap-y-14">
-                    <h1 className="lg:ml-28 m-0 text-[32px] font-medium tracking-[0] leading-10">La façon la plus simple  <br /> de réserver des billets de train</h1>
-                    <div className="
-                        form-area grid
-                        [grid-template-areas:'fields''footer']
-                        grid-rows-[auto_32px]
-                        items-start
-                        gap-6
-                        w-full
-                        mx-auto
-                        md:[grid-template-areas:'switcher''fields''footer']
-                        md:grid-rows-[44px_auto_32px]
-                    ">
-                        <div className="[grid-area:switcher] md:block hidden w-fit bg-[#595959] rounded-[72px] text-[14px]">
-                            <div className="flex">
-                                <label 
-                                    htmlFor="" 
-                                    className="
-                                    relative
-                                    px-8 py-2
-                                    cursor-pointer
-                                    bg-white
-                                    rounded-[72px]
-                                    text-[#ffaf01]
-                                    shadow-[0_1px_2px_0_rgba(0,0,0,0.03),0_1px_6px_-1px_rgba(0,0,0,0.02),0_2px_4px_0_rgba(0,0,0,0.02)]
-                                    after:content-['']
-                                    after:absolute
-                                    after:-z-1
-                                    after:w-full
-                                    after:h-full
-                                    after:top-0
-                                    after:start-0
-                                    after:rounded-inherit
-                                    after:pointer-events-none
-                                    after:transition-colors
-                                    after:duration-200">
-                                    <input 
-                                        type="radio"
-                                        className="absolute top-0 start-0 w-0 h-0 opacity-0 pointer-events-none" 
-                                    />
-                                    <div className="">One Way</div>
-                                </label>
-
-                                <label 
-                                    htmlFor="" 
-                                    className="
-                                    relative
-                                    px-8 py-2
-                                    cursor-pointer
-                                    rounded-[72px]
-                                    shadow-[0_1px_2px_0_rgba(0,0,0,0.03),0_1px_6px_-1px_rgba(0,0,0,0.02),0_2px_4px_0_rgba(0,0,0,0.02)]
-                                    after:content-['']
-                                    after:absolute
-                                    after:-z-1
-                                    after:w-full
-                                    after:h-full
-                                    after:top-0
-                                    after:start-0
-                                    after:rounded-inherit
-                                    after:pointer-events-none
-                                    after:transition-colors
-                                    after:duration-200">
-                                    <input 
-                                        type="radio"
-                                        className="absolute top-0 start-0 w-0 h-0 opacity-0 pointer-events-none" 
-                                    />
-                                    <div className="">Round Trip</div>
-                                </label>
-                            </div>
-                        </div>
-                        
-                        <div className="[grid-area:fields] flex gap-4 w-full h-[72px] text-[#191919]">
-                            
-                        </div>
-                    </div>
+                    <h1 className="lg:ml-20 text-[32px] font-medium tracking-[0] leading-10">Voyagez en tout confort  <br /> à partir de 5000 F CFA</h1>
+                    <SearchBar />
                 </div>
             </div>
 
@@ -113,36 +42,111 @@ export const Header = () => {
     )
 }
 
-export const FormLayout= ({ Switcher, Fields, Footer }) =>  {
-  return (
-    <div
-      className="
-        grid
-        [grid-template-areas:'fields''footer']
-        grid-rows-[auto_32px]
-        items-start
-        gap-6
-        w-full
-        mx-auto
 
-        md:[grid-template-areas:'switcher''fields''footer']
-        md:grid-rows-[44px_auto_32px]
-      "
-    >
-      {/* Switcher */}
-      <div className="[grid-area:switcher] md:block hidden w-fit">
-        {Switcher}
-      </div>
+export const SearchBar = () => {
+    return (
+        <div className="">
+            {/* Trip Type Toggle */}
+            <div className="tabs tabs-lift px-4 py-6">
+            <input type="radio" name="my_tabs_6" className="tab" aria-label="Aller simple" defaultChecked />
+            <div className="tab-content">
+                <form action="">
+                    <div className="flex gap-2 pt-4 items-center flex-wrap">
+                        <div className="flex flex-1 flex-col lg:flex-row">
+                            <div className="input-group flex flex-col text-[rgb(89,89,89)] w-full lg:w-1/2">
+                                <label htmlFor="">De</label>
+                                <input type="text" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2" />
+                            </div>
+                            <div className="input-group flex flex-col text-[rgb(89,89,89)] w-full lg:w-1/2">
+                                <label htmlFor="" className="uppercase">à</label>
+                                <input type="text" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2" />
+                            </div>
+                        </div>
+                        <div className="input-group flex flex-col text-[rgb(89,89,89)] w-full lg:w-auto">
+                            <label htmlFor="">Date</label>
+                            <input type="date" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2 rounded-md" />
+                        </div>
+                        <div className="input-group flex flex-col text-[rgb(89,89,89)] w-full lg:w-auto">
+                            <label htmlFor="">Place</label>
+                            <input type="text" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2 rounded-md" />
+                        </div>
+                        <div className="input-group flex flex-col text-[rgb(89,89,89)] w-full lg:w-auto">
+                            <label htmlFor="">Compagnie</label>
+                            <input type="text" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2 rounded-md" />
+                        </div>
+                        <div className="input-group flex flex-col mt-6 w-full lg:w-auto">
+                            <button type="submit" className="h-10 px-6 cursor-pointer rounded-md text-white bg-[rgb(255,78,0)] flex gap-4 items-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    className="text-white size-4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                >
+                                    <path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7"></path>
+                                </svg>
+                                <span className="lg:hidden">Rechercher</span>
+                            </button>
+                        </div>
+                    </div>
 
-      {/* Fields */}
-      <div className="[grid-area:fields]">
-        {Fields}
-      </div>
+                </form>
+            </div>
 
-      {/* Footer */}
-      <div className="[grid-area:footer]">
-        {Footer}
-      </div>
-    </div>
-  );
+            <input type="radio" name="my_tabs_6" className="tab" aria-label="Aller-retour" />
+            <div className="tab-content">
+                <form action="">
+                    <div className="flex gap-2 pt-4 items-center flex-wrap">
+                        <div className="flex flex-1 flex-col lg:flex-row">
+                            <div className="input-group flex flex-col text-[rgb(89,89,89)] w-full lg:w-1/2">
+                                <label htmlFor="">De</label>
+                                <input type="text" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2" />
+                            </div>
+                            <div className="input-group flex flex-col text-[rgb(89,89,89)] w-full lg:w-1/2">
+                                <label htmlFor="" className="uppercase">à</label>
+                                <input type="text" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2" />
+                            </div>
+                        </div>
+                        <div className="input-group flex text-[rgb(89,89,89)] flex-col lg:flex-row w-full lg:w-auto">
+                            <div className="flex flex-col w-full lg:w-1/2">
+                                <label htmlFor="">Date depart</label>
+                                <input type="date" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2 rounded-md" />
+                            </div>
+                            <div className="flex flex-col w-full lg:w-1/2">
+                                <label htmlFor="">Date de retour</label>
+                                <input type="date" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2 rounded-md" />
+                            </div>
+                        </div>
+                        <div className="input-group flex flex-col text-[rgb(89,89,89)] w-full lg:w-auto">
+                            <label htmlFor="">Place</label>
+                            <input type="text" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2 rounded-md" />
+                        </div>
+                        <div className="input-group flex flex-col text-[rgb(89,89,89)] w-full lg:w-auto">
+                            <label htmlFor="">Compagnie</label>
+                            <input type="text" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2 rounded-md" />
+                        </div>
+                        <div className="input-group flex flex-col mt-6 w-full lg:w-auto">
+                            <button type="submit" className="h-10 px-6 cursor-pointer rounded-md text-white bg-[rgb(255,78,0)] flex gap-4 items-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    className="text-white size-4"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    strokeWidth="2"
+                                >
+                                    <path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7"></path>
+                                </svg>
+                                <span className="lg:hidden">Rechercher</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            </div>
+        </div>
+        
+    )
 }

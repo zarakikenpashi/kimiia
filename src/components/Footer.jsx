@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <footer className="text-white">
       <div className="bg-black">
-        <div className="mx-auto mt-2 px-6 max-w-6xl rounded-2xl lg:px-5 py-12">
+        <div className="mx-auto mt-2 px-6 max-w-7xl rounded-2xl lg:px-5 py-12">
           <div className="flex flex-col gap-y-8 lg:flex-row lg:gap-y-0 items-center justify-between gap-x-11 w-full">
             <h6 className="text-[16px] leading-6 md:text-2xl font-medium lg:leading-8 tracking-normal normal-case no-underline self-start text-white">Notre app gratuite pour faciliter chaque étape de votre voyage !</h6>
             <div className="flex gap-6 items-center ">
@@ -47,7 +47,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="bg-[rgb(26,26,26)]">
-        <div className="mx-auto px-6 max-w-6xl rounded-2xl lg:px-5 py-12">
+        <div className="mx-auto px-6 max-w-7xl rounded-2xl lg:px-5 py-12">
           <div class="grid gap-12 md:grid-cols-4">
               <div class="md:col-span-2">
                   <a aria-label="go home" class="block size-fit" href="/">
