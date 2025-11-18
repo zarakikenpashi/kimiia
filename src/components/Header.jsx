@@ -1,8 +1,10 @@
+import { Link } from "react-router"
+
 export const Header = () => {
     return(
         <div 
             className="
-                min-h-[360px] pb-6 w-full relative
+                min-h-[560px] lg:min-h-[360px] pb-6 w-full relative
                 before:content-['']
                 before:absolute
                 before:inset-0
@@ -31,8 +33,8 @@ export const Header = () => {
                 />
             </div>
             <div className="absolute inset-0 z-10 text-white mx-auto max-w-7xl px-6 top-1/2">
-                <div className="flex justify-center flex-col h-full gap-y-14">
-                    <h1 className="lg:ml-20 text-[32px] font-medium tracking-[0] leading-10">Voyagez en tout confort  <br /> à partir de 5000 F CFA</h1>
+                <div className="flex justify-center flex-col h-full lg:gap-y-14 gap-y-6 ">
+                    <h1 className="lg:ml-20 lg:text-[32px] leading-8 text-[20px] font-medium lg:leading-10">Voyagez en tout confort  <br /> à partir de 5000 F CFA</h1>
                     <SearchBar />
                 </div>
             </div>
@@ -75,19 +77,22 @@ export const SearchBar = () => {
                             <input type="text" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2 rounded-md" />
                         </div>
                         <div className="input-group flex flex-col mt-6 w-full lg:w-auto">
-                            <button type="submit" className="h-10 px-6 cursor-pointer rounded-md text-white bg-[rgb(255,78,0)] flex gap-4 items-center">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    className="text-white size-4"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                >
-                                    <path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7"></path>
-                                </svg>
-                                <span className="lg:hidden">Rechercher</span>
-                            </button>
+                            <Link to="/order">
+                                <button className="h-10 px-6 cursor-pointer rounded-md text-white bg-[rgb(255,78,0)] flex gap-4 items-center">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        className="text-white size-4"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                    >
+                                        <path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7"></path>
+                                    </svg>
+                                    <span className="lg:hidden">Rechercher</span>
+                                </button>
+                            </Link>
+
                         </div>
                     </div>
 
@@ -127,19 +132,21 @@ export const SearchBar = () => {
                             <input type="text" className="bg-[rgba(255,175,1,0.1)] outline-none text-[rgb(89,89,89)] h-10 px-2 rounded-md" />
                         </div>
                         <div className="input-group flex flex-col mt-6 w-full lg:w-auto">
-                            <button type="submit" className="h-10 px-6 cursor-pointer rounded-md text-white bg-[rgb(255,78,0)] flex gap-4 items-center">
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    className="text-white size-4"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    strokeWidth="2"
-                                >
-                                    <path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7"></path>
-                                </svg>
-                                <span className="lg:hidden">Rechercher</span>
-                            </button>
+                            <Link to="/order">
+                                <button className="h-10 px-6 cursor-pointer rounded-md text-white bg-[rgb(255,78,0)] flex gap-4 items-center">
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24"
+                                        className="text-white size-4"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                    >
+                                        <path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.39M11 18a7 7 0 1 1 7-7 7 7 0 0 1-7 7"></path>
+                                    </svg>
+                                    <span className="lg:hidden">Rechercher</span>
+                                </button>
+                            </Link>
                         </div>
                     </div>
 
