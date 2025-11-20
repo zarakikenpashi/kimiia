@@ -10,6 +10,8 @@ import { Voyager } from "./pages/Voyager"
 import { Trajet } from "./pages/Trajet"
 import { Partenaire } from "./pages/Partenaire"
 import { Order } from "./pages/Order"
+import CheckoutPay from "./pages/CheckoutPay"
+import { Booking } from "./pages/Booking"
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="trajet" element={<Trajet />} />
         <Route path="partenaire" element={<Partenaire />} />
         <Route path="order" element={<Order />} />
+        <Route path="reservation" element={<Booking />} />
+        <Route path="checkout" element={<CheckoutPay />} />
       </Route>
       <Route path="auth" element={<AuthLayout />}>
         <Route path="connexion" element={<Login />} />
